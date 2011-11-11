@@ -1,38 +1,30 @@
 <!doctype html> 
 <html lang="en" class="js-disabled">
-	<head> 
-		<script type="text/javascript" charset="utf-8"> 
-			d = document.documentElement;
-			d.className = d.className.replace('js-disabled', 'js-enabled');
-		</script> 
-		<meta charset="utf-8"/>
-		<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
-		<link rel="shortcut icon" href="{Favicon}">
-		<link rel="alternate" type="application/rss+xml" href="{RSS}">
-		{block:Description}
-		<meta name="description" content="{MetaDescription}" />
-		{/block:Description}
+<head> 
+	<script type="text/javascript" charset="utf-8"> 
+		d = document.documentElement;
+		d.className = d.className.replace('js-disabled', 'js-enabled');
+	</script>
+	<meta charset="utf-8"/>
+	<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+	{block:Description}
+	<meta name="description" content="{MetaDescription}" />
+	{/block:Description}
+	<meta name="text:Google Analytics ID" content="" />
+	<link rel="apple-touch-icon" href="{PortraitURL-128}"/>
 		
-		<meta name="image:Background" content=""/>
-        <meta name="text:Google Analytics ID" content="" />
-        <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
-
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 		
-		<style type="text/css">
-		{block:IfBackgroundImage}
-		{/block:IfBackgroundImage}
-		
-		{block:IfNotBackgroundImage}
-		{/block:IfNotBackgroundImage}
-		
+	<style type="text/css">
 		{CustomCSS}
-		</style>
+	</style>
 
-    </head>
-    <body>
+</head>
+<body>
 	<div id="wrapper">
 		<header>
         	<h1>{Title}</h1>
