@@ -1,6 +1,6 @@
-# Tumblr Boilerplate
+# Tumblr Minimal Boilerplate
 
-A boilerplate template for tumblr themes. Started from this one:
-https://github.com/danrubin/Tumblr-Sandbox-Template
-
-Added some stuff.
+* no Google Analytics stuff
+* no wrapper div (use body)
+* formatted (tabs)
+* some comments
